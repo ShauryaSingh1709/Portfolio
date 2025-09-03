@@ -26,7 +26,7 @@ Hi! I’m **Shaurya Pratap Singh**, a curious **Computer Science student** explo
 
 ### Telegram Bots Modules
 - **Tech Stack:** Python, Pyrogram, Telethon  
-- Includes quiz and chess modules with leaderboard functionalities.
+
 
 ---
 
