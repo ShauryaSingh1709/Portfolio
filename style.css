@@ -10,7 +10,7 @@ hell/* -------- Root / Theme -------- */
   --shadow: 0 10px 30px rgba(2, 6, 23, .6);
   --radius: 18px;
 }
-[data-theme="light"] {
+[data-theme="dark"] {
   --bg: #f8fafc;
   --card: #ffffff;
   --text: #0f172a;
@@ -141,3 +141,4 @@ footer { padding: 26px 0 64px; color: var(--muted); }
 /* Active link indicator */
 .active-dot { display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); margin-left: 6px; vertical-align: middle; opacity: 0; transition: .2s; }
 a.link.active .active-dot { opacity: 1; }
+
