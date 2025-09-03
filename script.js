@@ -1,13 +1,4 @@
-// --- Theme toggle ---
-const root = document.documentElement;
-const themeBtn = document.getElementById('themeBtn');
-const saved = localStorage.getItem('theme');
-if (saved) root.setAttribute('data-theme', saved);
-themeBtn.addEventListener('click', () => {
-  const now = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-  root.setAttribute('data-theme', now);
-  localStorage.setItem('theme', now);
-});
+
 
 // --- Mobile menu ---
 const hamburger = document.getElementById('hamburger');
@@ -76,3 +67,4 @@ const io = new IntersectionObserver((entries)=>{
   });
 }, { threshold: .12 });
 revealEls.forEach(el => io.observe(el));
+
