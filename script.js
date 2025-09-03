@@ -36,25 +36,6 @@ setActiveLink();
 // --- Year ---
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// --- Simple contact validation (demo only) ---
-const form = document.getElementById('contactForm');
-const formNote = document.getElementById('formNote');
-form?.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const msg = document.getElementById('msg').value.trim();
-  if(!name || !email || !msg){
-    formNote.textContent = 'Please fill out all fields.';
-    return;
-  }
-  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  if(!emailOk){ formNote.textContent = 'Enter a valid email address.'; return; }
-
-  // Because this is a static site, we simulate send
-  form.reset();
-  formNote.textContent = 'Thanks! Your message has been queued (demo). Replace with a real endpoint later.';
-});
 
 // --- Small reveal on scroll ---
 const revealEls = document.querySelectorAll('.about-card, .project, .skill, .stat');
@@ -70,3 +51,4 @@ const io = new IntersectionObserver((entries)=>{
   });
 }, { threshold: .12 });
 revealEls.forEach(el => io.observe(el));
+
